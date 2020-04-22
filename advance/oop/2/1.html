@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>二、面向对象主要特征 | zZ爱吃菜</title>
+    <meta name="description" content="记录开发，记录生活">
+    <link rel="icon" href="/img/logo.jpg">
+  <link rel="stylesheet" href="/css/style.css">
+  <script charset="utf-8" src="/js/main.js"></script>
+    
+    <link rel="preload" href="/assets/css/0.styles.626fedcf.css" as="style"><link rel="preload" href="/assets/js/app.d9b0a8be.js" as="script"><link rel="preload" href="/assets/js/2.dfeefe94.js" as="script"><link rel="preload" href="/assets/js/14.10696f84.js" as="script"><link rel="prefetch" href="/assets/js/10.e7a674a5.js"><link rel="prefetch" href="/assets/js/11.4c8bf6d5.js"><link rel="prefetch" href="/assets/js/12.4e0fd2f1.js"><link rel="prefetch" href="/assets/js/13.e8c8f626.js"><link rel="prefetch" href="/assets/js/15.f8a89e08.js"><link rel="prefetch" href="/assets/js/16.1eb5263d.js"><link rel="prefetch" href="/assets/js/17.4ddc1a01.js"><link rel="prefetch" href="/assets/js/18.c9fd674d.js"><link rel="prefetch" href="/assets/js/19.c2c69591.js"><link rel="prefetch" href="/assets/js/20.65d01b8c.js"><link rel="prefetch" href="/assets/js/21.e6d01b88.js"><link rel="prefetch" href="/assets/js/22.33adbd14.js"><link rel="prefetch" href="/assets/js/23.118165f1.js"><link rel="prefetch" href="/assets/js/24.ada5e265.js"><link rel="prefetch" href="/assets/js/25.f0ed3bf8.js"><link rel="prefetch" href="/assets/js/26.e32e4e04.js"><link rel="prefetch" href="/assets/js/27.bd826510.js"><link rel="prefetch" href="/assets/js/28.99d06e23.js"><link rel="prefetch" href="/assets/js/29.5b4419ec.js"><link rel="prefetch" href="/assets/js/3.a78a1311.js"><link rel="prefetch" href="/assets/js/30.b2cb92b1.js"><link rel="prefetch" href="/assets/js/31.c0466e6c.js"><link rel="prefetch" href="/assets/js/32.e184aa1f.js"><link rel="prefetch" href="/assets/js/33.7a83e3fe.js"><link rel="prefetch" href="/assets/js/34.1951b7b7.js"><link rel="prefetch" href="/assets/js/35.d76d9386.js"><link rel="prefetch" href="/assets/js/36.72f6a253.js"><link rel="prefetch" href="/assets/js/37.bf4d697b.js"><link rel="prefetch" href="/assets/js/38.bbb2dce8.js"><link rel="prefetch" href="/assets/js/39.26c29e6f.js"><link rel="prefetch" href="/assets/js/4.a640192c.js"><link rel="prefetch" href="/assets/js/40.8355738f.js"><link rel="prefetch" href="/assets/js/41.e1f1230b.js"><link rel="prefetch" href="/assets/js/42.d4a8991e.js"><link rel="prefetch" href="/assets/js/43.cb8a7199.js"><link rel="prefetch" href="/assets/js/44.f2da1d0c.js"><link rel="prefetch" href="/assets/js/45.b95d08b5.js"><link rel="prefetch" href="/assets/js/46.e0cea998.js"><link rel="prefetch" href="/assets/js/47.d9461b52.js"><link rel="prefetch" href="/assets/js/48.61786f7c.js"><link rel="prefetch" href="/assets/js/49.3987afca.js"><link rel="prefetch" href="/assets/js/5.d7099aa7.js"><link rel="prefetch" href="/assets/js/50.159bf9af.js"><link rel="prefetch" href="/assets/js/51.d6ad7976.js"><link rel="prefetch" href="/assets/js/52.3c9d6bb6.js"><link rel="prefetch" href="/assets/js/53.457392fd.js"><link rel="prefetch" href="/assets/js/54.289f8965.js"><link rel="prefetch" href="/assets/js/55.7bea2695.js"><link rel="prefetch" href="/assets/js/56.b0d493cc.js"><link rel="prefetch" href="/assets/js/57.9ad7f812.js"><link rel="prefetch" href="/assets/js/58.ba4cb581.js"><link rel="prefetch" href="/assets/js/59.7b6814b7.js"><link rel="prefetch" href="/assets/js/6.10be9919.js"><link rel="prefetch" href="/assets/js/60.f757e747.js"><link rel="prefetch" href="/assets/js/61.6e65aff4.js"><link rel="prefetch" href="/assets/js/62.ed989088.js"><link rel="prefetch" href="/assets/js/63.fcf0b41d.js"><link rel="prefetch" href="/assets/js/64.eac23bf1.js"><link rel="prefetch" href="/assets/js/65.5503d6c5.js"><link rel="prefetch" href="/assets/js/66.03f5104b.js"><link rel="prefetch" href="/assets/js/67.48e84939.js"><link rel="prefetch" href="/assets/js/68.2ed028b5.js"><link rel="prefetch" href="/assets/js/7.c17c72ee.js"><link rel="prefetch" href="/assets/js/8.593bcd4c.js"><link rel="prefetch" href="/assets/js/9.3d01efee.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.626fedcf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">zZ爱吃菜</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">随笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notebook/php/" class="nav-link">PHP</a></li><li class="dropdown-subitem"><a href="/notebook/mysql/" class="nav-link">MySQL</a></li><li class="dropdown-subitem"><a href="/notebook/java/" class="nav-link">JAVA</a></li><li class="dropdown-subitem"><a href="/notebook/server/" class="nav-link">服务器</a></li></ul></li><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notebook/js/" class="nav-link">Javascript</a></li><li class="dropdown-subitem"><a href="/notebook/css/" class="nav-link">CSS</a></li><li class="dropdown-subitem"><a href="/notebook/flutter/" class="nav-link">Flutter</a></li><li class="dropdown-subitem"><a href="/notebook/ios/" class="nav-link">iOS</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">进阶之路</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advance/oop/" class="nav-link router-link-active">PHP面向对象编程</a></li><li class="dropdown-item"><!----> <a href="/advance/cit/" class="nav-link">CIT框架设计</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">我的项目</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/lwadmin/" class="nav-link">LW.ADMIN</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">工具箱</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>在线编辑</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  图片压缩
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li><li class="dropdown-item"><h4>在线服务</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.aliyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  阿里云
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://cloud.tencent.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  腾讯云
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li><li class="dropdown-item"><h4>博客指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://juejin.im/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://blog.csdn.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">随笔记</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>后端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notebook/php/" class="nav-link">PHP</a></li><li class="dropdown-subitem"><a href="/notebook/mysql/" class="nav-link">MySQL</a></li><li class="dropdown-subitem"><a href="/notebook/java/" class="nav-link">JAVA</a></li><li class="dropdown-subitem"><a href="/notebook/server/" class="nav-link">服务器</a></li></ul></li><li class="dropdown-item"><h4>前端</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/notebook/js/" class="nav-link">Javascript</a></li><li class="dropdown-subitem"><a href="/notebook/css/" class="nav-link">CSS</a></li><li class="dropdown-subitem"><a href="/notebook/flutter/" class="nav-link">Flutter</a></li><li class="dropdown-subitem"><a href="/notebook/ios/" class="nav-link">iOS</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">进阶之路</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/advance/oop/" class="nav-link router-link-active">PHP面向对象编程</a></li><li class="dropdown-item"><!----> <a href="/advance/cit/" class="nav-link">CIT框架设计</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">我的项目</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/project/lwadmin/" class="nav-link">LW.ADMIN</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">工具箱</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>在线编辑</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://tinypng.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  图片压缩
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li><li class="dropdown-item"><h4>在线服务</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://www.aliyun.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  阿里云
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://cloud.tencent.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  腾讯云
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li><li class="dropdown-item"><h4>博客指南</h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="https://juejin.im/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-subitem"><a href="https://blog.csdn.net/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>面向对象编程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/advance/oop/1/1.html" class="sidebar-link">一、面向对象基础</a></li><li><a href="/advance/oop/2/1.html" class="active sidebar-link">二、面向对象主要特征</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_1-构造方法与析构方法" class="sidebar-link">1. 构造方法与析构方法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_1-构造方法-construct" class="sidebar-link">1) 构造方法(__construct)</a></li><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_2-析构方法-destruct" class="sidebar-link">2.析构方法(__destruct)</a></li></ul></li><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_2-类的继承与-final-关键字" class="sidebar-link">2. 类的继承与 final 关键字</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_1-类的继承简介" class="sidebar-link">1) 类的继承简介</a></li><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_3-不同修饰符下属性与方法影响类的继承" class="sidebar-link">3) 不同修饰符下属性与方法影响类的继承</a></li><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_3-类的属性与方法重写" class="sidebar-link">3) 类的属性与方法重写</a></li><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_4-子类实例化过程中" class="sidebar-link">4) 子类实例化过程中</a></li><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_5-final-关键字" class="sidebar-link">5) final 关键字</a></li></ul></li><li class="sidebar-sub-header"><a href="/advance/oop/2/1.html#_3-静态绑定" class="sidebar-link">3. 静态绑定</a></li></ul></li><li><a href="/advance/oop/3/1.html" class="sidebar-link">三、魔术方法</a></li><li><a href="/advance/oop/4/1.html" class="sidebar-link">四、对象复制</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="二、面向对象主要特征"><a href="#二、面向对象主要特征" aria-hidden="true" class="header-anchor">#</a> 二、面向对象主要特征</h1> <h2 id="_1-构造方法与析构方法"><a href="#_1-构造方法与析构方法" aria-hidden="true" class="header-anchor">#</a> 1. 构造方法与析构方法</h2> <h3 id="_1-构造方法-construct"><a href="#_1-构造方法-construct" aria-hidden="true" class="header-anchor">#</a> 1) 构造方法(__construct)</h3> <p>用于类的初始化,当一个类被初始化时,首先进入的就是类的构造方法,用户初始化一些类的操作</p> <h3 id="_2-析构方法-destruct"><a href="#_2-析构方法-destruct" aria-hidden="true" class="header-anchor">#</a> 2.析构方法(__destruct)</h3> <p>当一个类的实例被注销时,会调用析构方法,这个方法不是特别常用,但是代表的是一类的实例生命周期的终结.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name">Computer</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'构造方法:初始化'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">game</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span>  <span class="token single-quoted-string string">'玩游戏'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__destruct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'析构方法:注销操作'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$computer</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Computer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$computer</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">game</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果:</span>
+构造方法<span class="token punctuation">:</span>初始化  
+玩游戏
+析构方法<span class="token punctuation">:</span>注销操作
+
+</code></pre></div><p>上面代码执行结果,体验了一个类从被实例到被注销的过程</p> <p>当一个 PHP 执行脚本被执行完,其所有类的实例都会被注销,所有都会走 __destruct 函数,下面是一个复杂的例子,在类的实例化时,在构造函数中传入某个私有属性的初始化值,并在后续的函数调用中提现私有属性的意义,最后我们可以看到,两个类的实例在 PHP 脚本执行结束后都被注销.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">class</span> <span class="token class-name">Computer</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token variable">$memery</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token variable">$memery</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'构造方法:初始化'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">memery</span> <span class="token operator">=</span> <span class="token variable">$memery</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">game</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">memery</span> <span class="token operator">&gt;=</span> <span class="token number">1024</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">echo</span> <span class="token single-quoted-string string">'大内存电脑, 可以玩游戏'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">echo</span> <span class="token single-quoted-string string">'小内存电脑,不能玩游戏'</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">echo</span>  <span class="token single-quoted-string string">'玩游戏'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__destruct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'析构方法:注销操作'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$computer1</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Computer</span><span class="token punctuation">(</span><span class="token number">1024</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$computer1</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">game</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$computer2</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Computer</span><span class="token punctuation">(</span><span class="token number">2048</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$computer2</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">game</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果:</span>
+构造方法<span class="token punctuation">:</span>初始化       
+大内存电脑<span class="token punctuation">,</span> 可以玩游戏
+玩游戏
+构造方法<span class="token punctuation">:</span>初始化
+大内存电脑<span class="token punctuation">,</span> 可以玩游戏
+玩游戏
+析构方法<span class="token punctuation">:</span>注销操作
+析构方法<span class="token punctuation">:</span>注销操作
+</code></pre></div><h2 id="_2-类的继承与-final-关键字"><a href="#_2-类的继承与-final-关键字" aria-hidden="true" class="header-anchor">#</a> 2. 类的继承与 final 关键字</h2> <p>类的继承关系类似父子关系, 子类继承父类,拥有父类的属性与方法(public 和 protected)</p> <h3 id="_1-类的继承简介"><a href="#_1-类的继承简介" aria-hidden="true" class="header-anchor">#</a> 1) 类的继承简介</h3> <h4 id="类的继承好处"><a href="#类的继承好处" aria-hidden="true" class="header-anchor">#</a> 类的继承好处</h4> <ul><li>扩展性</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// 定义父类: Vehicle类</span>
+<span class="token keyword">class</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'交通工具'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义子类: Bug 类</span>
+<span class="token keyword">class</span> <span class="token class-name">Bus</span> <span class="token keyword">extends</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span> <span class="token punctuation">}</span>
+
+<span class="token variable">$bus</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Bus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$bus</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果: 交通工具</span>
+</code></pre></div><h3 id="_3-不同修饰符下属性与方法影响类的继承"><a href="#_3-不同修饰符下属性与方法影响类的继承" aria-hidden="true" class="header-anchor">#</a> 3) 不同修饰符下属性与方法影响类的继承</h3> <p>上面提到,(public, protected) 修饰的类的属性与方法才能够被子类继承.如果是 private 属性,子类是没有办法继承的</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// 定义父类: Vehicle类</span>
+<span class="token keyword">class</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token keyword">function</span> <span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'交通工具'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">// 定义私有方法</span>
+    <span class="token keyword">private</span> <span class="token keyword">function</span> <span class="token function">author</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'zZ爱吃菜'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义子类: Bug 类</span>
+<span class="token keyword">class</span> <span class="token class-name">Bus</span> <span class="token keyword">extends</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getAuthor</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">author</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token variable">$bus</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Bus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// protected 方法可以被子类继承</span>
+<span class="token variable">$bus</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果: 交通工具</span>
+<span class="token comment">// protected 方法无法被外部调用</span>
+<span class="token variable">$bus</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果: protected 修复的方法不能被外部使用,但可以被子类继承内部使用.</span>
+<span class="token constant">PHP</span> Fatal error<span class="token punctuation">:</span>  Uncaught Error<span class="token punctuation">:</span> Call to <span class="token keyword">protected</span> method Vehicle<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span> from context <span class="token single-quoted-string string">''</span>
+<span class="token comment">// private 方法无法被子类继承</span>
+<span class="token variable">$bus</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getAuthor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果:</span>
+Fatal error<span class="token punctuation">:</span> Uncaught Error<span class="token punctuation">:</span> Call to <span class="token keyword">private</span> method Vehicle<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">author</span><span class="token punctuation">(</span><span class="token punctuation">)</span> from context <span class="token single-quoted-string string">'Bus'</span>
+</code></pre></div><h3 id="_3-类的属性与方法重写"><a href="#_3-类的属性与方法重写" aria-hidden="true" class="header-anchor">#</a> 3) 类的属性与方法重写</h3> <p>子类可以覆盖父类方法和属性</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// 定义父类: Vehicle类</span>
+<span class="token keyword">class</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">speed</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'5km/h'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义子类: Bug 类</span>
+<span class="token keyword">class</span> <span class="token class-name">Bus</span> <span class="token keyword">extends</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">// 重写父类方法 speed</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">speed</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'80km/h'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token variable">$bus</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Bus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$bus</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">speed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+输出结果<span class="token punctuation">:</span> <span class="token number">80</span>km<span class="token operator">/</span>h
+</code></pre></div><h3 id="_4-子类实例化过程中"><a href="#_4-子类实例化过程中" aria-hidden="true" class="header-anchor">#</a> 4) 子类实例化过程中</h3> <p>我们知道,类的初始化时会调用构造方法,如果子类初始化时会如何调用构造方法呢?</p> <ul><li>如果父类定义了构造方法,而子类没有,则调用父类的构造方法</li> <li>如果父类子类都定义了构造方法,子类重写父类构造方法</li> <li>子类可以手动调用父类构造方法</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// 定义父类: Vehicle类</span>
+<span class="token keyword">class</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'初始化 Vehicle'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义子类: Bug 类</span>
+<span class="token keyword">class</span> <span class="token class-name">Bus</span> <span class="token keyword">extends</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">parent</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'初始化 Bus'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token variable">$bus</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Bus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果:</span>
+初始化 Vehicle
+初始化 Bus
+</code></pre></div><p><strong>注意</strong>: 一般我们约定类的集成不超过三级,因为继承层数太多,会导致代码难以维护.</p> <h3 id="_5-final-关键字"><a href="#_5-final-关键字" aria-hidden="true" class="header-anchor">#</a> 5) final 关键字</h3> <p>final 只能修饰 类(class) 和 类的方法(function)</p> <ul><li>final 修饰 class : 表示 这个类不能被继承</li> <li>final 修复 类的方法: 表示这个类的方法不能被重写</li></ul> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// 定义父类: Vehicle类</span>
+<span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'初始化 Vehicle'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义子类: Bug 类</span>
+<span class="token keyword">class</span> <span class="token class-name">Bus</span> <span class="token keyword">extends</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token variable">$bus</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Bus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果: 表示 final class (Vehicle) 不能被继承</span>
+<span class="token constant">PHP</span> Fatal error<span class="token punctuation">:</span>  <span class="token keyword">Class</span> Bus may not inherit from <span class="token keyword">final</span> <span class="token keyword">class</span> <span class="token punctuation">(</span>Vehicle<span class="token punctuation">)</span>
+</code></pre></div><h2 id="_3-静态绑定"><a href="#_3-静态绑定" aria-hidden="true" class="header-anchor">#</a> 3. 静态绑定</h2> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// 定义父类: Vehicle类</span>
+<span class="token keyword">class</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'Vehicle 的 name 方法'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        self<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义子类: Bug 类</span>
+<span class="token keyword">class</span> <span class="token class-name">Bus</span> <span class="token keyword">extends</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'Bus 的 name 方法'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+Bus<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果:</span>
+Vehicle 的 name 方法
+</code></pre></div><p>查看上面的代码,我们发现,静态方法 name() Vehicle 与 Bus 都有,但是在调用 <code>Bus::getName();</code> 时却执行的是 Vehicle 方法.</p> <p>那么问题来了: 如果我们希望的是 getName() 方法调用的是 Bus 的方法呢?</p> <h4 id="static-关键字"><a href="#static-关键字" aria-hidden="true" class="header-anchor">#</a> static 关键字</h4> <p>通过 static 关键字, <code>static::name()</code> 此时 static 就代表调用 who 方法的当前类.也就是后期绑定的概念.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token comment">// 定义父类: Vehicle类</span>
+<span class="token keyword">class</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'Vehicle 的 name 方法'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">static</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 定义子类: Bug 类</span>
+<span class="token keyword">class</span> <span class="token class-name">Bus</span> <span class="token keyword">extends</span> <span class="token class-name">Vehicle</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">function</span> <span class="token function">name</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">echo</span> <span class="token single-quoted-string string">'Bus 的 name 方法'</span> <span class="token punctuation">.</span> <span class="token constant">PHP_EOL</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+Bus<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token function">getName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 输出结果:</span>
+Bus 的 name 方法
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">8/8/2019, 4:10:24 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/advance/oop/1/1.html" class="prev">
+          一、面向对象基础
+        </a></span> <span class="next"><a href="/advance/oop/3/1.html">
+          三、魔术方法
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d9b0a8be.js" defer></script><script src="/assets/js/2.dfeefe94.js" defer></script><script src="/assets/js/14.10696f84.js" defer></script>
+  </body>
+</html>
